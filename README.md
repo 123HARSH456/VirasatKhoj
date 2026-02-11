@@ -1,5 +1,9 @@
 # Virasat-Khoj (Phase 2 MVP)
 
+Apk download link: https://expo.dev/artifacts/eas/twRuptFRvbJrF4yupFywgR.apk
+
+Deployment link (Web app): https://virasat-khoj-harsh-v1.web.app/
+
 **Virasat-Khoj** is a gamified heritage discovery application designed to crowdsource the mapping and documentation of unprotected and forgotten historical sites across India. By leveraging AI-driven verification and a "Capture-to-Claim" mechanic, it empowers citizens to become digital "Guardians" of their local history.
 
 ---
