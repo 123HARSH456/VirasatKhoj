@@ -73,4 +73,3 @@ As of the current Phase 2 milestone, the project has transitioned from a theoret
 
 ## 🔮 Remaining Work
 * Migration to a global Firebase backend for real-time leaderboards and site claims.
-* App crash fixes due to map not loaded.
