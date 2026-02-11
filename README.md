@@ -1,50 +1,72 @@
-# Welcome to your Expo app 👋
+# Virasat-Khoj (Phase 2 MVP)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+**Virasat-Khoj** is a gamified heritage discovery application designed to crowdsource the mapping and documentation of unprotected and forgotten historical sites across India. By leveraging AI-driven verification and a "Capture-to-Claim" mechanic, it empowers citizens to become digital "Guardians" of their local history.
 
-## Get started
+---
 
-1. Install dependencies
+## 🏛️ Project Overview
 
-   ```bash
-   npm install
-   ```
+Traditional heritage databases often overlook smaller, local ruins. **Virasat-Khoj** bridges this gap by turning the act of discovery into an engaging mobile experience.
 
-2. Start the app
+### **Core Features**
+* **AI-Powered Verification:** Uses Google Gemini 1.5 Flash to instantly analyze photos, verify they contain heritage structures, and generate historical narratives.
+* **Gamified Exploration:** Users navigate a live map to find unmapped sites, earning XP and "Guardian Ranks" for every successful claim.
+* **Local-First Persistence:** Data is stored locally on the device via AsyncStorage to ensure functionality in remote or low-connectivity areas.
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## 🛠️ Technical Stack
+* **Frontend:** React Native (Expo)
+* **AI Engine:** Google Gemini 1.5 Flash API
+* **Navigation:** Expo Router
+* **Maps:** `react-native-maps`
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🚀 Setup Instructions
 
-## Get a fresh project
+### **Prerequisites**
+* Node.js (LTS)
+* Expo Go app on your mobile device
+* Google Gemini API Key (from Google AI Studio)
 
-When you're ready, run:
+### **Installation**
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/123HARSH456/VirasatKhoj.git](https://github.com/123HARSH456/VirasatKhoj.git)
+    cd virasat-khoj
+    ```
 
-```bash
-npm run reset-project
-```
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+3.  **Environment Setup:**
+    Create a `.env` file in the root directory and add your Gemini API key:
+    ```text
+    EXPO_PUBLIC_GEMINI_API_KEY=your_api_key_here
+    ```
 
-## Learn more
+4.  **Start the app:**
+    ```bash
+    npx expo start
+    ```
+    Scan the QR code with the Expo Go app to view the project on your phone.
 
-To learn more about developing your project with Expo, look at the following resources:
+---
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## 📈 Current Progress (Phase 2)
 
-## Join the community
+As of the current Phase 2 milestone, the project has transitioned from a theoretical architecture to a functional local prototype:
 
-Join our community of developers creating universal apps.
+* **Functional Map:** A live geolocation map with custom markers for hidden and claimed sites.
+* **Integrated Camera:** A seamless camera interface that captures images and converts them to Base64 for AI processing.
+* **Working AI Pipeline:** The app successfully communicates with Gemini 1.5 Flash to perform real-time verification and historical storytelling.
+* **Data Persistence:** Captured discoveries successfully persist across app restarts using local storage.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+---
+
+## 🔮 Roadmap
+* Migration to a global Firebase backend for real-time leaderboards.
+* App crash fixed due to map not loaded.
